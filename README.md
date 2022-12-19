@@ -1,4 +1,4 @@
-# WIP manuscript on citation indices
+# The field-dependent nature of PageRank values in citation networks
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -8,10 +8,14 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
-
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+There are more academic papers than any human can read in a lifetime, so several article-level and journal-level metrics have been devised to rank papers. 
+One challenge when creating such metrics is the dierences in citation practices between fields. 
+To account for these dierences, scientists have devised normalization schemes to make metrics more comparable across fields. 
+In this paper, we argue that these normalization schemes obscure useful signals about fields' preferences for articles.
+We use PageRank as an example metric and begin by demonstrating that there are, in fact, differences in journals' PageRanks between fields. 
+We then show that even papers shared between fields have dierent PageRanks depending on which field's citation network the metric is calculated in.
+Finally, we find that some of these differences are caused by field-specic preferences by using a degree-preserving graph shuffling algorithm to generate a null distribution of similar networks. 
+Our results demonstrate that while differences exist between fields' metric distributions, applying metrics in a field-aware manner rather than using normalized global metrics avoids losing important information about article preferences.
 
 ## Manubot
 
